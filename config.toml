@@ -1,0 +1,7 @@
+baseURL = 'http://dipsmokehouse.fr/'
+languageCode = 'fr-fr'
+title = 'DIP SmokeHouse - BBQ Grill - Sophia Antipolis'
+theme = "smokyBeef"
+[params]
+  title = "DIP SmokeHouse - BBQ Grill - Sophia Antipolis"
+  description = "Restaurant de viandes cuites au Smoker, à Sophia Antipolis"
