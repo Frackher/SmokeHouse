@@ -1,6 +1,27 @@
 /* Import SCSS */
 @import 'normalize';
+@import 'fonts';
+@import 'colors';
 
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.bgBeige {background-color: $c_beige;width: 100%;}
+.bgGrey {background-color: $c_grey;width: 100%;}
+header, footer, section {width:76rem;margin:0 auto;}
+
+header {display: flex;justify-content:space-between;align-items:center;
+    > a {font-family: WhiskeyTown;font-size: 5rem;color: $c_red;text-decoration: none;text-align:center;display:inline-block;
+        small {font-size: 3rem;display: block;}
+    }
+    nav {
+        ul {display: flex;justify-content:space-between;padding:0;
+            li {display: block;padding:0 1rem;
+                a {font-size: 1.5rem;color: $c_grey;}
+            }
+        }
+    }
+}
+
+.splash {width: 100%;background: url(/img/splash/pulled_pork_burger.jpg) center/cover;min-height: 40rem;}

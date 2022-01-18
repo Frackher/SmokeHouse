@@ -14,6 +14,9 @@
 
     {{ template "_internal/opengraph.html" . }}
 
+    {{ $whiskeytown := resources.Get "/fonts/WhiskeyTown-Sober.ttf" }}
+    <link rel="preload" as="font" href="{{ $whiskeytown.Permalink }}" type="font/truetype" crossorigin>
+
     <link rel="dns-prefetch" as="script" href="https://www.googletagmanager.com/gtag/js?id=G-HC94L3CZ41">
   
     <link rel="canonical" href="{{ .Permalink }}" />
