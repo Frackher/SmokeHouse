@@ -15,7 +15,13 @@
     {{ template "_internal/opengraph.html" . }}
 
     {{ $whiskeytown := resources.Get "/fonts/WhiskeyTown-Sober.ttf" }}
+    {{ $poppins := resources.Get "/fonts/poppins.woff2" }}
+    {{ $poppinsBold := resources.Get "/fonts/poppins-bold.woff2" }}
+    {{ $material := resources.Get "/fonts/material.woff2" }}
     <link rel="preload" as="font" href="{{ $whiskeytown.Permalink }}" type="font/truetype" crossorigin>
+    <link rel="preload" as="font" href="{{ $poppins.Permalink }}" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="{{ $poppinsBold.Permalink }}" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="{{ $material.Permalink }}" type="font/woff2" crossorigin>
 
     <link rel="dns-prefetch" as="script" href="https://www.googletagmanager.com/gtag/js?id=G-HC94L3CZ41">
   

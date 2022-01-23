@@ -1,4 +1,4 @@
-baseURL = 'http://dipsmokehouse.fr/'
+baseURL = 'http://www.dipsmokehouse.fr/dev/'
 languageCode = 'fr-fr'
 title = 'DIP SmokeHouse - BBQ Grill - Sophia Antipolis'
 theme = "smokyBeef"
