@@ -14,14 +14,15 @@ html {
 .bgGrey {background-color: $c_grey;width: 100%;}
 header, footer, section {width:76rem;margin:0 auto;}
 
-header {display: flex;justify-content:space-between;align-items:center;
-    > a {font-family:$f_whiskey;font-size: 5rem;color: $c_red;text-decoration: none;text-align:center;display:inline-block;
-        small {font-size: 3rem;display: block;}
+header {display: flex;justify-content:space-between;align-items:center;position: relative;min-height:8rem;
+    > a {position: absolute;top:.5rem;left:50%;margin-left:-12.5rem;
+        img {width: 25rem;height: auto;}
     }
-    nav {
+    nav {width:100%;
         ul {display: flex;justify-content:space-between;padding:0;
-            li {display: block;padding:0 1rem;position: relative;
-                a {font-size: 1.5rem;color: $c_grey;text-decoration: none;}
+            .spacer {width:18%;}
+            li {display: block;padding:0 1rem;position: relative;width:15%;text-align:center;
+                a {font-size: 1.5rem;color: $c_grey;text-decoration: none;font-weight: bold;}
                 .material-icons-outlined {position: absolute;text-align: center;margin:2rem -1.5rem 0;left:50%;right:50%;width:3rem;font-size:2rem;color: $c_grey;}
             }
         }
@@ -35,9 +36,9 @@ footer {display: flex;padding:2rem 0;justify-content: space-evenly;color: $c_bei
 
 
 .pulledPork {
-    section {height:40rem;padding:3rem;box-sizing:border-box;
+    section {height:40rem;padding:6rem;box-sizing:border-box;
         h2 {display:block;margin:0;font-family: $f_poppins;color:$c_white;background-color: rgba(0, 0, 0, 0.5);
-        width:40%;height: 100%;padding:1rem;box-sizing: border-box;font-weight: normal;
+        width:40%;height: 100%;padding:1rem;box-sizing: border-box;font-weight: normal;font-size: 1.4rem;
         }
     }
 }
