@@ -1,14 +1,17 @@
 <div class="bgWood">
 <header>
-    <a href="#"><img src="img/logo.svg" alt="Logo DIP Smokehouse American BBQ" width="267" height="150"></a>
+    <a href="{{ .Site.BaseURL }}"><img src="img/logo.svg" alt="Logo DIP Smokehouse American BBQ" width="267" height="150"></a>
     <nav>
+        <input type="checkbox">
+        <button class="mio">menu</button>
+        <button class="mio">close</button>
         <ul>
             <li><a href="{{ ref . `menu` }}">Menu<div class="mio">restaurant_menu</div></a></li>
-            <li><a href="#">Boissons<div class="mio">sports_bar</div></a></li>
+            <li><a href="{{ ref . `boissons` }}">Boissons<div class="mio">sports_bar</div></a></li>
             <li class="spacer"></li>
             <li class="spacer"></li>
             <li><a href="#">Histoire<div class="mio">menu_book</div></a></li>
-            <li><a href="#">Contact<div class="mio">email</div></a></li>
+            <li><a href="mailto:contact@dipsmokehouse.fr">Contact<div class="mio">email</div></a></li>
         </ul>
     </nav>
 </header>

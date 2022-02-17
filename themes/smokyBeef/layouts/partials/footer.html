@@ -1,12 +1,24 @@
 <div class="bgGrey">
 <footer>
     <div>
-        <strong>DIP Smoke House</strong><br>
+        <strong>DIP Smokehouse</strong><br>
         200 Av. Roumanille<br>
         06410 Biot<br><br>
-        📱 06.01.02.03.04
+        📱 04.93.63.41.57
     </div>
     <div>Les mentions légales</div>
     <div>Les réseaux sociaux</div>
 </footer>
 </div>
+
+{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YREXVYPFT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2YREXVYPFT');
+    </script>
+{{ end }}

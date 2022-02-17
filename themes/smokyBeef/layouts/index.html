@@ -1,24 +1,24 @@
 {{ define "main" }}
     <div class="splash pulledPork">
         <section>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+            <h2>Venez déguster les recettes traditionelles de "l'American BBQ".<br><br>Notre fameux <strong>pulled pork</strong> est cuit pendant plusieurs heures à basse température et au smoker.<br><br>Pas de surcuisson, c'est la fumée et la chaleur qui viennent cuire notre viande à la perfection.<br><br>Nous vous proposons aussi nos spécialités <strong>Tex Mex</strong>, <strong>BAR-B-Q</strong> et <strong>Finger Food</strong> à partager.</h2>
         </section>
     </div>
     <div class="bgBeige">
         <section id="info1">
             <div>
                 <h2>Une cuisson de la viande parfaite</h2>
-                <p>Grâce à notre cuisson au smoker, la viande n'est pas agressée, et cuit lentement pendant plusieurs heures.<br>L'origine de nos viandes est connue et reconnue:</p>
+                <p>Grâce à notre cuisson au smoker, la viande n'est pas agressée, et cuit lentement pendant plusieurs heures.<br>L'origine de nos viandes est affichée en restaurant.</p>
                 <ul>
-                    <li>🐷 Porc premium des Hauts-de-France</li>
-                    <li>🐮 Boeuf de race Aubrac et Salers</li>
-                    <li>🐔 Poulet élevé en plein air de xxx</li>
+                    <li>🐷 Porc : pulled pork, ribs charnus</li>
+                    <li>🐮 Boeuf : beef brisket, entrecôte, fajitas, chilli</li>
+                    <li>🐔 Poulet : buffalo wings, fajitas</li>
                 </ul>
             </div>
             <div>
                 <h2>Pour le midi, pour le soir</h2>
                 <p>Que ce soit seul ou entre amis, avec vos collégues, venez découvrir notre carte de viandes smokées, tapas et finger food.<br>Le soir en sortant du bureau, venez déguster une de nos bières pression que nous avons soigneusement sélectionnées (* à consommer avec modération)</p>
-                <a href="#">
+                <a href="{{ ref . `menu` }}">
                     <span class="mio">restaurant_menu</span>
                     <span>Voir la carte</span>
                 </a>
@@ -28,9 +28,9 @@
     <div class="splash beers">
         <section>
             ~ Nos Bieres ~<br>
-            IPA, Lager, qualitee artisanale<br><br>
+            Lager, IPA, Pale Ale, Ambree<br><br>
             <span>"La biere est la preuve que Dieu nous aime et veut que nous soyons heureux."<br>
-                - Benjamin Franklin -
+                <i>Benjamin Franklin</i>
             </span>
         </section>
     </div>
@@ -41,23 +41,23 @@
             <table>
                 <tr>
                     <td>Lundi</td>
-                    <td>11h30 <span>à</span> 14h30<br>18h30 <span>à</span> 22h30</td>
+                    <td>12h00 <span>à</span> 14h30<br>17h30 <span>à</span> 22h30</td>
                 </tr>
                 <tr>
                     <td>Mardi</td>
-                    <td>11h30 <span>à</span> 14h30<br>18h30 <span>à</span> 22h30</td>
+                    <td>12h00 <span>à</span> 14h30<br>17h30 <span>à</span> 22h30</td>
                 </tr>
                 <tr>
                     <td>Mercredi</td>
-                    <td>11h30 <span>à</span> 14h30<br>18h30 <span>à</span> 22h30</td>
+                    <td>12h00 <span>à</span> 14h30<br>17h30 <span>à</span> 22h30</td>
                 </tr>
                 <tr>
                     <td>Jeudi</td>
-                    <td>11h30 <span>à</span> 14h30<br>18h30 <span>à</span> 22h30</td>
+                    <td>12h00 <span>à</span> 14h30<br>17h30 <span>à</span> 22h30</td>
                 </tr>
                 <tr>
                     <td>Vendredi</td>
-                    <td>11h30 <span>à</span> 14h30<br>18h30 <span>à</span> 22h30</td>
+                    <td>12h00 <span>à</span> 14h30<br>17h30 <span>à</span> 22h30</td>
                 </tr>
                 <tr>
                     <td>Samedi</td>
@@ -75,14 +75,13 @@
                 200 Av. Roumanille<br>
                 06410 Biot
             </p>
-            <img src="img/googlemaps.jpg" width="676" height="676">
-            
+            <a href="https://goo.gl/maps/fJa7YNjTGv2WucVx5" title="Itinéraire vers notre restaurant" target="_blank" rel="noreferrer"><img src="img/googlemaps.jpg" width="676" height="676" alt="Itinéraire vers notre restaurant"></a>
         </div>
     </section>
     </div>
     <div class="splash smoker">
     <section>
-        <h2>" Smoked Meat for Happy People "<br>🥓🍖🍗🥩</h2>
+        <h2>" Une cuisson lente, au smoker, pour un gout incroyable "</h2>
     </section>
     </div>
 {{ end }}
