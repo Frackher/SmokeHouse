@@ -108,7 +108,9 @@ footer {display: flex;padding:2rem 0;justify-content: space-evenly;color: $c_bei
     ul {width: 100%;box-sizing:border-box;padding-left:3rem;
         li {list-style: none;display: flex;flex-wrap:wrap;justify-content:space-between;align-items:center;
             margin-bottom: 1rem;
-            div {flex-grow: 1;flex-basis: 10%;}
+            div {flex-grow: 1;flex-basis: 10%;display:flex;justify-content:flex-start;align-items:center;
+                img {width:auto;height:2rem;padding-right:.5rem;}
+            }
             h4{font-size: 1rem;line-height: 1.5rem;margin: 0;}
             span {padding:0 1rem;color: $c_red;}
             p {width: 100%;margin: .25rem 0;}
@@ -117,6 +119,7 @@ footer {display: flex;padding:2rem 0;justify-content: space-evenly;color: $c_bei
     > div:last-child {display: flex;flex-wrap: wrap;flex-direction:column;justify-content:flex-end;
         strong, p {width: 100%;}
     }
+    .emoji {width:auto;height: 2rem;vertical-align: bottom;}
 }
 
 #boissons {padding:6rem 0 3rem;color: $c_grey;
