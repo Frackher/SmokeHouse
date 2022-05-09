@@ -1,9 +1,9 @@
 baseURL = 'https://dipsmokehouse.fr'
 languageCode = 'fr-FR'
-title = 'DIP SmokeHouse - BBQ Grill - Sophia Antipolis'
+title = 'DIP SmokeHouse | BBQ Grill | Sophia Antipolis'
 theme = "smokyBeef"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
   title = "DIP SmokeHouse - BBQ Grill - Sophia Antipolis"
-  description = "Restaurant de viandes cuites au Smoker et spécialités American BBQ, au croisement de Biot, Antibes et Sophia Antipolis"
+  description = "Restaurant de viandes cuites au Smoker et spécialités American BBQ, au croisement de Biot, Antibes et Sophia Antipolis, dans le quartier Saint-Philippe"
   env = "production"

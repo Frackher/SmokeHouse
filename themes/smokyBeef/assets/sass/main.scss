@@ -22,7 +22,7 @@ header {display: flex;justify-content:space-between;align-items:center;position:
         img {width: 25rem;height: auto;}
     }
     nav {width:100%;
-        input, button.mio {display: none;}
+        label, input, button.mio {display: none;}
         ul {display: flex;justify-content:space-between;padding:0;
             .spacer {width:18%;}
             li {display: block;padding:0 1rem;position: relative;width:15%;text-align:center;
@@ -185,6 +185,7 @@ $mobile-width: 76rem;
 
     footer {padding:1rem 5%;box-sizing: border-box;flex-wrap:wrap;
         div:first-child {width:100%;}
+        .sn {margin-top: 1rem;}
     }
 
     .splash {min-height: 10rem;}
